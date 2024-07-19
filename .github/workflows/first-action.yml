@@ -1,0 +1,13 @@
+name: First Workflow
+
+# "workflow_dispatch" event allows the worklow to be manually triggred
+on: workflow_dispatch
+
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbuy
+        run: echo "Done - buy!"
